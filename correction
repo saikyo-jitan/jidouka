@@ -1,0 +1,29 @@
+第1刷の修正点
+
+P140
+❷で囲まれた部分
+修正前-------------
+    '名前から「佐藤」を抽出
+    Range("B2").AutoFilter Field:=2, Criteria1:="佐藤"
+
+    '抽出結果を同じブックと別のブックにコピー
+    Range("B2").CurrentRegion.Copy shtNew1.Range("B2")
+    Range("B2").CurrentRegion.Copy shtNew2.Range("B2")
+
+修正後-------------
+    '名前から「佐藤」を抽出
+    Worksheets("Sheet1").Range("B2").AutoFilter Field:=2, Criteria1:="佐藤"
+
+    '抽出結果を同じブックと別のブックにコピー
+    Worksheets("Sheet1").Range("B2").CurrentRegion.Copy shtNew1.Range("B2")
+    Worksheets("Sheet1").Range("B2").CurrentRegion.Copy shtNew2.Range("B2")
+
+
+P187
+誤）
+これで、保存後にSavedプロパティがTrue(未保存修正なし）になったも、
+
+正）
+これで、保存後にSavedプロパティがTrue(未保存修正なし）になっても、
+
+
