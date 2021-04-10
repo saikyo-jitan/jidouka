@@ -1,7 +1,7 @@
 # 『Excel自動化最強時短仕事術』
 このリポジトリは、技術評論社刊『Excel自動化最強時短仕事術』のサポートページです。
 
-![]()
+![](https://github.com/saikyo-jitan/jidouka/blob/main/jidouka_h1.png)
 
 ## 書籍情報
 2021年2月26日紙版発売
